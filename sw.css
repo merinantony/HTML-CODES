@@ -1,0 +1,30 @@
+.index {
+    margin-top: -229px;
+    margin-left: 280px;
+    position: relative;
+}
+
+.container {
+    margin-top: -400px;
+    margin-left: 240px;
+    width: 800px;
+    height: 200px;
+}
+
+.watch {
+    margin-top: -181px;
+    margin-left: 260px;
+    position: absolute;
+}
+
+#txt {
+    color: red;
+    margin-top: -150px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#txt1 {
+    color: red;
+}

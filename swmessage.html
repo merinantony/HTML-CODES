@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Msg</title>
+
+
+
+    <meta charset="utf-8">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        #clockbox {
+            margin-top: -450px;
+            margin-right: -500px;
+        }
+        
+        .not {
+            margin-top: 0cm;
+            margin-left: 9.5cm;
+        }
+        
+        #btn {
+            float: initial;
+            margin-left: 9cm;
+            margin-top: 1cm;
+        }
+        
+        button:hover {
+            background-color: yellow;
+        }
+        
+        #paragraph {
+            margin-top: 1cm;
+            margin-left: 8cm;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+
+
+    <div class="image">
+        <img src="sw.jpg" height="100%" width="50%">
+        <div id="clockbox"></div>
+        <a id="a1">Java</a>
+        <a id="a2">C++</a>
+        <a id="a3">Python</a>
+
+
+
+
+
+
+
+
+
+        <p id="p1"> Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p>
+        <p id="p2">C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". </p>
+        <p id="p3"></p>
+
+
+
+        <div class="not">
+
+
+            <a href="swmessage.html">
+                <i class="fa fa-envelope" aria-hidden="true" id="message"></i>&nbsp;
+            </a>
+
+            <a href="swmusic.html">
+                <i class="fa fa-music" aria-hidden="true" id="music"></i> &nbsp;</a>
+
+            <a href="swtimer.html">
+                <i class="fa fa-clock-o" aria-hidden="true" id="clock"></i>&nbsp;
+            </a>
+
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        // var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        // var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        // function GetClock(){
+        // var d=new Date();
+        // var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+        // var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+        // if(nhour==0){ap=" AM";nhour=12;}
+        // else if(nhour<12){ap=" AM";}
+        // else if(nhour==12){ap=" PM";}
+        // else if(nhour>12){ap=" PM";nhour-=12;}
+
+        // if(nmin<=9) nmin="0"+nmin;
+        // if(nsec<=9) nsec="0"+nsec;
+
+        // var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+        // document.getElementById('clockbox').innerHTML=clocktext;
+        // }
+
+        // GetClock();
+        // setInterval(GetClock,1000);
+
+
+        $(document).ready(function() {
+            $("p").hide();
+            $("button").click(function() {
+                $("p").slideToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
